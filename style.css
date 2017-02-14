@@ -1,0 +1,216 @@
+*    {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;    /* supported by firefox only */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.title {
+    color: #111;
+    font-family: 'Lato', sans-serif;
+    font-size: 64px;
+    letter-spacing: 4px;
+    margin: 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content    {
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    text-align: justify;
+}
+
+.mask    {
+
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 7%;
+}
+
+@-webkit-keyframes slideIn {
+    0%    {
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+    }
+    100%    {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+}
+
+@keyframes slideIn {
+    0%    {
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+    }
+    100%    {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+}
+
+.caption    {
+    -webkit-animation: slideIn;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+            animation: slideIn;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+    color: white;
+    float: right;
+    font-family: 'Satisfy', sans-serif;
+    font-size: 100px;
+    position: relative;
+    right: 5%;
+    top: 10%;
+}
+
+.sub-caption    {
+    -webkit-animation: slideIn;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+            animation: slideIn;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+    clear: right;
+    color: white;
+    float: right;
+    font-family: 'Mada', sans-serif;
+    font-size: 64px;
+    position: relative;
+    right: 5%;
+    top: 8%;
+}
+
+.scroll-down    {
+    background-color: #111;
+    bottom: 5%;
+    color: white;
+    font-family: 'Mada', sans-serif;
+    font-size: 24px;
+    left: 40%;
+    letter-spacing: 8px;
+    opacity: 0.7;
+    padding: 18px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.links    {
+    background-color: #111;
+    bottom: 15%;
+    color: white;
+    font-family: 'Mada', sans-serif;
+    font-size: 24px;
+    left: 33%;
+    letter-spacing: 8px;
+    opacity: 0.7;
+    padding: 18px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.credits    {
+    color: rgb(255, 255, 255, 0.7);
+    font-family: 'Satisfy', sans-serif;
+    font-size: 24px;
+    position: absolute;
+    bottom: 1px;
+    padding: 10px;
+    left: 40%;
+}
+
+.section    {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    opacity: 0.9;
+    position: relative;
+}
+
+.quote    {
+    color: #0d142e;
+    text-indent: 50px;
+    font-family: 'Mada', sans-serif;
+    font-size: 50px;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 35%;
+    padding-top: 100px;
+}
+
+.author    {
+    font-family: 'Satisfy', sans-serif;
+    font-size: 48px;
+    color: #b30632;
+    font-weight: bold;
+    float: right;
+    padding-top: 30px;
+    padding-right: 35%;
+}
+
+.mark    {
+    font-family: serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: #0d142e;
+}
+
+/*Heights and images for parallax classes*/
+
+#home    {
+    background-image: url('img/mjfox-intro.jpg');
+}
+
+#test    {
+    height: auto;
+}
+
+#johnny-b-goode    {
+    background-image: url('img/johnny-b-goode.jpg');
+    height: 60%;
+}
+
+#bttf    {
+    height: auto;
+}
+
+#fox-side    {
+    background-image: url('img/fox-side.jpg');
+    height: 80%;
+}
+
+#fox-logo    {
+    width: 100%;
+    padding: 5% 15%;
+}
+
+#fox-foundation    {
+    height: auto;
+}
+
+#end    {
+    background-image: url('img/back-to-the-future-delorean.jpg');
+}
